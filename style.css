@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Quicksand:wght@300&family=Tangerine:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.header {
+    background-color: #f1f1f1;
+    text-align: left;
+    padding: 10px;
+    margin: 1px;
+}
+
+.heading-title {
+    font-family: 'Tangerine', cursive;
+    font-size: 8em;
+}
+
+.title-year {
+   font-family: 'Quicksand', sans-serif;
+   font-size: 1em; 
+}
+
+nav {
+    text-align: right;
+    padding-right: 8px;
+}
+
+main {
+    padding-top: 10px;
+}
+
+.row {
+    display: -webkit-flex;
+    padding: 10px;
+}
+
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 1px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;  
+}
+
+
+
+
+
+img {
+    width: 25em;
+    height: 25em;
+    border: solid 1px black
+}
+
+.title-year {
+    text-align: left;
+}
+
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visted {
+    text-decoration: none;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
