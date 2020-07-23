@@ -30,6 +30,7 @@ nav {
 
 main {
     padding-top: 10px;
+    background-color: lightpink;
 }
 
 .row {
@@ -59,9 +60,6 @@ p {
     font-family: 'Quicksand', sans-serif;
     font-size: 2em;  
 }
-
-
-
 
 
 img {
