@@ -84,6 +84,10 @@ a:visted {
     text-decoration: none;
 }
 
+#superhero {
+    transform: rotate(45deg);
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .row {
