@@ -64,7 +64,12 @@ p {
 img {
     width: 25em;
     height: 25em;
-    border: solid 1px black
+    border: solid px black
+}
+
+.individual-drawings {
+    width: 26em;
+    height: 26em;
 }
 
 .title-year {
@@ -86,6 +91,27 @@ a:visted {
 
 #superhero {
     transform: rotate(90deg);
+}
+
+.slideshow {
+
+    border: black 2px solid;
+    display:none;
+}
+
+.drawings {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 7em;
+}
+
+.drawings img {
+    padding: 1em;
+}
+
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
