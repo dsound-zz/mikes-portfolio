@@ -31,7 +31,7 @@
                     <div class="w3-content w3-section" style="max-width:500px">
                         <img class="slideshow" src="resources/FullSizeRender.png" alt="shepardtrump" style="width:100%">
                         <img class="slideshow" src="resources/FullSizeRender.jpeg" alt="image2" style="width:100%">
-                        <img class="slideshow" src="resources/FullSizeRender.jpg"  alt="image3" style="width:100%">
+                        <img class="slideshow" src="resources/FullSizeRender.jpg" alt="image3" style="width:100%">
                         <img class="slideshow" src="resources/FullSizeRender-1.jpeg" alt="image4" style="width:100%">
                         <img class="slideshow" src="resources/IMG_0167.jpeg" alt="image5" style="width:100%">
                         <img class="slideshow" src="resources/IMG_0318.jpeg" alt="image6" style="width:100%">
@@ -43,28 +43,28 @@
             </div>
             <hr class="rounded">
             <section class="drawings">
-            <div class="row">
-                <div class="column">
-                      <img class="individual-drawings" src="resources/FullSizeRender.png" alt="shepardtrump" >
-                      <img class="individual-drawings" src="resources/FullSizeRender.jpeg" alt="image2">
-                      <img class="individual-drawings" src="resources/FullSizeRender.jpg" id="superhero" alt="image3">
+                <div class="row">
+                    <div class="column">
+                        <img class="individual-drawings" src="resources/FullSizeRender.png" alt="shepardtrump">
+                        <img class="individual-drawings" src="resources/FullSizeRender.jpeg" alt="image2">
+                        <img class="individual-drawings" src="resources/FullSizeRender.jpg" id="superhero" alt="image3">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                     <img class="individual-drawings" src="resources/FullSizeRender-1.jpeg" alt="image4">
-                     <img class="individual-drawings" src="resources/IMG_0167.jpeg" alt="image5">
-                     <img class="individual-drawings" src="resources/IMG_0318.jpeg" alt="image6">
+                <div class="row">
+                    <div class="column">
+                        <img class="individual-drawings" src="resources/FullSizeRender-1.jpeg" alt="image4">
+                        <img class="individual-drawings" src="resources/IMG_0167.jpeg" alt="image5">
+                        <img class="individual-drawings" src="resources/IMG_0318.jpeg" alt="image6">
+                    </div>
                 </div>
-            </div>
-             <div class="row">
-                 <div class="column">
-                     <img class="individual-drawings" src="resources/IMG_1129.jpeg" alt="image7">
-                     <img class="individual-drawings" src="resources/IMG_1133.jpeg" alt="image8">
-                     <img class="individual-drawings" src="resources/IMG_1141.jpeg" alt="image9">
-                 </div>
-             </div>
-             </section>
+                <div class="row">
+                    <div class="column">
+                        <img class="individual-drawings" src="resources/IMG_1129.jpeg" alt="image7">
+                        <img class="individual-drawings" src="resources/IMG_1133.jpeg" alt="image8">
+                        <img class="individual-drawings" src="resources/IMG_1141.jpeg" alt="image9">
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="row">
@@ -74,24 +74,24 @@
             </div>
         </footer>
     </div>
-     <script>
-         var myIndex = 0;
-         carousel();
+    <script>
+        var myIndex = 0;
+        carousel();
 
-         function carousel() {
-             var i;
-             var x = document.getElementsByClassName("slideshow");
-             for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";
-             }
-             myIndex++;
-             if (myIndex > x.length) {
-                 myIndex = 1
-             }
-             x[myIndex - 1].style.display = "block";
-             setTimeout(carousel, 2000); // Change image every 2 seconds
-         }
-     </script>
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slideshow");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
 
 </body>
 
