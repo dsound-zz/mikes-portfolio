@@ -1,98 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" , initial-scale=1.0">
-    <title>Mike Art</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" , initial-scale=1.0">
+        <title>Mike Art</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <div class="grid-container">
-        <header class="header">
-            <div class="row">
-                <div class="column">
-                    <h1 class="heading-title">Mike Sims Art</h1>
-                </div>
-                <div class="column">
-                    <nav>
-                        <h3>about</h3>
-                        <h3>latest</h3>
-                        <h3>contact</h3>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="row">
-                <div class="column">
-                    <div class="w3-content w3-section" style="max-width:500px">
-                        <img class="slideshow" src="resources/FullSizeRender.png" alt="shepardtrump" style="width:100%">
-                        <img class="slideshow" src="resources/FullSizeRender.jpeg" alt="image2" style="width:100%">
-                        <img class="slideshow" src="resources/FullSizeRender.jpg" alt="image3" style="width:100%">
-                        <img class="slideshow" src="resources/FullSizeRender-1.jpeg" alt="image4" style="width:100%">
-                        <img class="slideshow" src="resources/IMG_0167.jpeg" alt="image5" style="width:100%">
-                        <img class="slideshow" src="resources/IMG_0318.jpeg" alt="image6" style="width:100%">
-                        <img class="slideshow" src="resources/IMG_1129.jpeg" alt="image7" style="width:100%">
-                        <img class="slideshow" src="resources/IMG_1133.jpeg" alt="image8" style="width:100%">
-                        <img class="slideshow" src="resources/IMG_1141.jpeg" alt="image9" style="width:100%">
-                    </div>
-                </div>
-            </div>
-            <hr class="rounded">
-            <section class="drawings">
+    <body>
+        <div class="grid-container">
+            <header class="header">
                 <div class="row">
                     <div class="column">
-                        <img class="individual-drawings" src="resources/FullSizeRender.png" alt="shepardtrump">
-                        <img class="individual-drawings" src="resources/FullSizeRender.jpeg" alt="image2">
-                        <img class="individual-drawings" src="resources/FullSizeRender.jpg" id="superhero" alt="image3">
+                        <h1 class="heading-title">Mike Sims Art</h1>
+                    </div>
+                    <div class="column">
+                        <nav>
+                            <h3>about</h3>
+                            <h3>latest</h3>
+                            <h3>contact</h3>
+                        </nav>
                     </div>
                 </div>
+            </header>
+            <main>
+
+                <!-- <hr class="rounded"> -->
+                <section class="drawings">
+                    <div class="row">
+                        <div class="column">
+                            <img src="resources/FullSizeRender.png" alt="shepardtrump">
+                            <img src="resources/FullSizeRender.jpeg" alt="image2">
+                            <img src="resources/FullSizeRender.jpg" id="superhero" alt="image3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="resources/FullSizeRender-1.jpeg" alt="image4">
+                            <img src="resources/IMG_0167.jpeg" alt="image5">
+                            <img src="resources/IMG_0318.jpeg" alt="image6">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="resources/IMG_1129.jpeg" alt="image7">
+                            <img src="resources/IMG_1133.jpeg" alt="image8">
+                            <img src="resources/IMG_1141.jpeg" alt="image9">
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
                 <div class="row">
                     <div class="column">
-                        <img class="individual-drawings" src="resources/FullSizeRender-1.jpeg" alt="image4">
-                        <img class="individual-drawings" src="resources/IMG_0167.jpeg" alt="image5">
-                        <img class="individual-drawings" src="resources/IMG_0318.jpeg" alt="image6">
+                        <h3><a href="mikegsims@gmail.com">Contact Me</a></h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="column">
-                        <img class="individual-drawings" src="resources/IMG_1129.jpeg" alt="image7">
-                        <img class="individual-drawings" src="resources/IMG_1133.jpeg" alt="image8">
-                        <img class="individual-drawings" src="resources/IMG_1141.jpeg" alt="image9">
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="row">
-                <div class="column">
-                    <h3><a href="mikegsims@gmail.com">Contact Me</a></h3>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script>
-        var myIndex = 0;
-        carousel();
+            </footer>
+        </div>
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("slideshow");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2000); // Change image every 2 seconds
-        }
-    </script>
-
-</body>
+    </body>
 
 </html>

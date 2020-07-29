@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Quicksand:wght@300&family=Tangerine:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 * {
   margin: 0px;
@@ -6,42 +7,55 @@
 }
 
 .header {
-  background-color: #f1f1f1;
+  background-color: "white";
   text-align: left;
-  padding: 10px;
+  padding: 40px;
   margin: 1px;
 }
 
 .heading-title {
-  font-family: "Tangerine", cursive;
-  font-size: 8em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
 }
 
-.title-year {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1em;
-}
 
 nav {
   text-align: right;
-  padding-right: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  padding: 2em;
+  margin: 1px;  
 }
 
-main {
-  padding-top: 10px;
+.drawings {
+    display: inline-flex;
+    padding: 1rem;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: auto;
+    border: solid 3px black;
 }
 
 .row {
-  display: -webkit-flex;
-  padding: 10px;
+    display: -webkit-flex;
+    padding: 1em;
 }
 
 .column {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 1px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 6px;
 }
+
+
+main {
+    padding-top: 2px;
+}
+
 
 .footer {
   background-color: #f1f1f1;
@@ -49,30 +63,6 @@ main {
   text-align: center;
 }
 
-h3 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 2em;
-}
-
-p {
-  font-family: "Quicksand", sans-serif;
-  font-size: 2em;
-}
-
-img {
-  width: 25em;
-  height: 25em;
-  border: solid px black;
-}
-
-.individual-drawings {
-  width: 26em;
-  height: 26em;
-}
-
-.title-year {
-  text-align: left;
-}
 
 a {
   color: black;
@@ -90,25 +80,7 @@ a:visted {
   transform: rotate(90deg);
 }
 
-.slideshow {
-  border: black 2px solid;
-  display: none;
-}
 
-.drawings {
-  display: inline-flex;
-  flex-wrap: wrap;
-  padding: 7em;
-}
-
-.drawings img {
-  padding: 1em;
-}
-
-hr.rounded {
-  border-top: 8px solid #bbb;
-  border-radius: 5px;
-}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
