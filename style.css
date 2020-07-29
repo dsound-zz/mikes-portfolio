@@ -81,6 +81,25 @@ a:visted {
   transform: rotate(90deg);
 }
 
+.about-me {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em; 
+    padding: 1em;  
+}
+
+.bio {
+    display: block;
+     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 2em;
+    
+}
+
+
+
+
+
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
